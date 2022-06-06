@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --primary-dark-cyan: hsl(185, 75%, 39%);
+  --primary-dark-blue: hsl(229, 23%, 23%);
+  --primary-dark-grayish-blue: (227, 10%, 46%);
+  --neutral-dark-blue: hsl(0, 0%, 59%);
+  /* font-family: 'Kumbh Sans', sans-serif; */
+}
+
+body {
+  font-size: 18px;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-dark-cyan);
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat no-repeat;
+  background-position: right 55vw bottom 40vh, left 55vw top 50vh;
+  background-size: 800px, 800px;
+  /* background-size: 25px 25px;s */
+}
+
+.card {
+  width: 22rem;
+  height: min-content;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 0 1.5rem;
+}
+
+/* CARD PROFILE */
+
+.card__profile {
+  background-image: url("./images/bg-pattern-card.svg");
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+  height: 20vh;
+}
+
+.card__profile img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  position: absolute;
+  bottom: -5%;
+  transform: translate(-50%, 50%);
+}
+
+/* CARD CONTACT */
+
+.card__contact {
+  color: var(--primary-dark-blue);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.card__contact h2 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 5rem 0 0 0;
+}
+
+.card__contact h2 span {
+  font-weight: 400;
+  color: var(--neutral-dark-blue);
+}
+
+.card__contact p {
+  font-weight: 400;
+  color: var(--neutral-dark-blue);
+  font-size: 16px;
+  margin: 0.5rem 0 1.7rem 0;
+}
+
+/* CARD LINE */
+
+.card__line {
+  background-color: var(--neutral-dark-blue);
+  opacity: 0.3;
+  font-weight: 400;
+}
+
+/* CARD DATA */
+.card__data {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card__data div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.card__data h3 {
+  font-weight: 700;
+  color: var(--primary-dark-blue);
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 1rem 0 0 0;
+}
+
+.card__data p {
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: var(--neutral-dark-blue);
+  margin: 0.5rem 0 2rem 0;
+}
+
+@media screen and (min-width: 400px) {
+  .card {
+    width: 25rem;
+  }
+
+  .card__contact h2 {
+    font-size: 25px;
+  }
+
+  .card__contact h2 span {
+    margin-left: 5px;
+  }
+
+  .card__contact p {
+    font-size: 18px;
+  }
+
+  .card__data p {
+    font-size: 18px;
+  }
+}
